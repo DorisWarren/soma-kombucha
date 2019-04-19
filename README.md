@@ -23,7 +23,7 @@ _If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' bu
 
 ## Support and contact details
 
-_Please contact Doris Warren at doriswarren11@gmail.com_
+_If you have any questions or conerns, please contact Doris Warren at doriswarren11@gmail.com_
 
 ## Technologies Used
 

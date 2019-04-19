@@ -9,6 +9,9 @@ function Header(){
       <style jsx>{`
         
         `}</style>
+        
+          
+        }
     </div>
   );
 }

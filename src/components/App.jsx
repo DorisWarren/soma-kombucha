@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import WeeklySchedule from './WeeklySchedule';
-import MonthlyProduce from './MonthlyProduce';
+
 // import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
@@ -10,7 +10,6 @@ function App(){
     <div>
       <Header/>
       <WeeklySchedule/>
-      <MonthlyProduce/>
       <style jsx global>{`
         body {
           font-family: sans-serif;

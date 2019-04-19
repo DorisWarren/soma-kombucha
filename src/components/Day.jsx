@@ -5,12 +5,10 @@ import PropTypes from 'prop-types';
 function Day(props) {
   return(
     <div>
-      <hr/>
       <h3>{props.day} {props.hours} </h3>
       <h2>{props.location}</h2>
       <p><em>Booth {props.booth}</em></p>
       <img src={require(`../assets/images/${props.image}`)} alt="somaImages"/>
-      <hr/>
       <style jsx>{`
         div {
           text-align: center;

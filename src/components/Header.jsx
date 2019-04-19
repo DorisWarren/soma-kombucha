@@ -1,11 +1,11 @@
 import React from 'react';
 import veggies from '../assets/images/soma.jpeg';
 
+
 function Header(){
   return (
     <div>
-      <h2>SOMA</h2>
-      
+      <img  style={{width:'100%'}} src={veggies}/>
       <style jsx>{`
         h2 {
           text-align: center;

@@ -15,7 +15,7 @@ function App(){
         body {
           font-family: sans-serif;
           box-style: border-box;
-          background-color: #e7e8d9;
+          background-color: #FFFFFF;
         }
         `}</style>
     </div>

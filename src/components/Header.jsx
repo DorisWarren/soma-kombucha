@@ -1,6 +1,7 @@
 import React from 'react';
 import soma from '../assets/images/soma.jpeg';
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Header(){
   return (
@@ -23,6 +24,7 @@ function Header(){
           font-family:bree;
           font-size:14px;
           font-weight: 400;
+          
         }
         `}</style>
         

@@ -6,12 +6,13 @@ function Header(){
   return (
     <div>
     <img style={{width:'70%', position:'relative', marginLeft: '155px'}} src={soma}/>
+    
       <style jsx>{`
         
         `}</style>
         
           
-        }
+        
     </div>
   );
 }
@@ -19,3 +20,4 @@ function Header(){
 export default Header;
 
 
+<ul className="nav" key="list"> ... </ul>;

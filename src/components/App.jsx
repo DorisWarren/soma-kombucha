@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from './Header';
 import WeeklySchedule from './WeeklySchedule';
-
-// import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
 function App(){
   return (
     <div>
       <Header/>
+      <Switch>
       <WeeklySchedule/>
+      <Route exact path='/' component={Header} />
+      </Switch>
       <style jsx global>{`
         body {
           font-family: sans-serif;

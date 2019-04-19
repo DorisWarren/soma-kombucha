@@ -1,10 +1,10 @@
-# _React Template_
+# _SOMA KOMBUCHA_
 
-## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
+## _Epicodus Week 1 React!_
 
-#### _This is a template using webpack for React, 04/15/19_
+#### _Published April 19 ,2019_
 
-#### By _****_
+#### Author _**Doris Warren**_
 
 ## Description
 
@@ -23,7 +23,7 @@ _If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' bu
 
 ## Support and contact details
 
-_Please contact - at -@gmail.com_
+_Please contact Doris Warren at doriswarren11@gmail.com_
 
 ## Technologies Used
 
@@ -37,4 +37,4 @@ _AOS_
 
 *This Software is Licensed under the MIT License.*
 
-Copyright (c) 2019 **__**
+Copyright (c) 2019 **_Doris Warren_**

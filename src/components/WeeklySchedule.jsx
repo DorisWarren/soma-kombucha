@@ -28,21 +28,21 @@ const marketSchedule = [
     location: 'Shemanski Park',
     hours: '10:00am - 2:00pm',
     booth: '3E',
-    image:'.jpg'
+    image:'balance.jpg'
   },
   {
     day: 'Thursday',
     location: 'Northwest Portland',
     hours: '2:00pm - 6:00pm',
     booth: '6D',
-    image:'.jpg'
+    image:'delight.jpg'
   },
   {
     day: 'Saturday',
     location: 'Beaverton',
     hours: '10:00am - 1:30pm',
     booth: '9G',
-    image:'.jpg'
+    image:'vigor.jpg'
   }
 ];
 

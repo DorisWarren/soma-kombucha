@@ -20,7 +20,7 @@ function Day(props) {
           font-size: 1.5em;
           padding: 10px;
           color: #9fa845;
-          text-shadow: 1px 1px #5f3917;
+        
         }
         img {
           height: 200px;

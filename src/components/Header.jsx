@@ -1,4 +1,5 @@
 import React from 'react';
+import veggies from '../assets/images/soma.jpeg';
 
 function Header(){
   return (

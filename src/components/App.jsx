@@ -10,7 +10,7 @@ function App(){
       <Header/>
       <Switch>
       <WeeklySchedule/>
-      <Route exact path='/' component={Header} />
+      <Route exact path='/' component={WeeklySchedule} />
       </Switch>
       <style jsx global>{`
         body {

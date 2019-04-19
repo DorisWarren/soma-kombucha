@@ -7,12 +7,13 @@
 #### Author _**Doris Warren**_
 
 ## Description
-_Soma Kombucha Taproom is considered one of the most healthiest drinks around! This weeks objectives are to use creat a web application using REACT library. 
+_Soma Kombucha Taproom is considered one of the most healthiest drinks around! Would you like to order some booch? Objectives for this weeks Independent project is to create a web application using REACT library._ 
 
 ## Setup/Installation Requirements
-
-* _Run `git clone ` in your terminal of choice_
-* _Navigate to where you put the folder inside your terminal and run `npm install`_
+* _Clone this repository grom Github_
+* _Run `git clone` in your terminal of choice_
+* _$ cd `soma-kombucha`_
+* _Navigate to the folder inside your terminal and run `npm install`_
 * _After the install is complete you can run `npm run start` to see a live version of the website._
 
 

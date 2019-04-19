@@ -9,7 +9,7 @@ function Day(props) {
       <h3>{props.day} {props.hours} </h3>
       <h2>{props.location}</h2>
       <p><em>Booth {props.booth}</em></p>
-      <img src={require(`../assets/images/${props.image}`)} alt="marketImages"/>
+      <img src={require(`../assets/images/${props.image}`)} alt="somaImages"/>
       <hr/>
       <style jsx>{`
         div {

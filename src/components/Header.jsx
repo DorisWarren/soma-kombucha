@@ -8,7 +8,7 @@ function Header(){
     <div>
     <img style={{width:'70%', position:'relative', marginLeft: '155px'}} src={soma}/>
     <ul>
-        <Link to= "/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link> 
+        <Link to= "/"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link> 
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>WHERE TO BUY</Link> 
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>
@@ -26,6 +26,7 @@ function Header(){
           font-size:14px;
           font-weight: 400;
           color: #cecece;
+          flex-wrap:wrap;
         }
         h3{
           text-align: center;

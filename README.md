@@ -1,4 +1,4 @@
-# _SOMA KOMBUCHA_
+# _SOMA KOMBUCHA TAPROOM_
 
 ## _Epicodus Week 1 React!_
 
@@ -7,8 +7,7 @@
 #### Author _**Doris Warren**_
 
 ## Description
-
-__
+_Soma Kombucha Taproom is considered one of the most healthiest drinks around! This weeks objectives are to use creat a web application using REACT library. 
 
 ## Setup/Installation Requirements
 

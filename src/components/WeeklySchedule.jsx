@@ -14,7 +14,7 @@ const marketSchedule = [
     location: 'Pioneer Courthouse Square',
     hours: '10:00am - 2:00pm',
     booth: '7C',
-    image:'fruit.jpg'
+    image:'radiate.jpg'
   },
   {
     day: 'Tuesday',

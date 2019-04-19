@@ -8,12 +8,12 @@ function Header(){
     <div>
     <img style={{width:'70%', position:'relative', marginLeft: '155px'}} src={soma}/>
     <ul>
-        <Link to="/">HOME</Link> 
-        <Link to="/">WHERE TO BUY</Link> 
-        <Link to="/">SOMA TAPROOM</Link>
-        <Link to="/">ORDER</Link>
-        <Link to="/">PRODUCTS</Link>
-        <Link to="/">ABOUT</Link>
+        <Link to= "/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link> 
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>WHERE TO BUY</Link> 
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>PRODUCTS</Link>
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ABOUT</Link>
     </ul>
       <style jsx>{`
         ul {
@@ -24,6 +24,7 @@ function Header(){
           font-family:bree;
           font-size:14px;
           font-weight: 400;
+          color: #cecece;
           
         }
         `}</style>

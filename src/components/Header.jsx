@@ -15,6 +15,7 @@ function Header(){
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>PRODUCTS</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ABOUT</Link>
     </ul>
+    <h3>KOMBUCHA</h3>
       <style jsx>{`
         ul {
           display: flex;
@@ -25,12 +26,17 @@ function Header(){
           font-size:14px;
           font-weight: 400;
           color: #cecece;
-          
+        }
+        h3{
+          text-align: center;
+          front-family: proxima-nova;
+          font-size:36px;
+          font-weight:100;
+          font-style:normal;
+          letter-spacing:0px;
+          line-height: 1.5em;
         }
         `}</style>
-        
-          
-        
     </div>
   );
 }

@@ -8,7 +8,7 @@
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+__
 
 ## Setup/Installation Requirements
 

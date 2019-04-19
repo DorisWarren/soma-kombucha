@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import WeeklySchedule from './WeeklySchedule';
+import SomaFlavor from './SomaFlavor';
 import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
@@ -9,8 +9,8 @@ function App(){
     <div>
       <Header/>
       <Switch>
-      <WeeklySchedule/>
-      <Route exact path='/' component={WeeklySchedule} />
+      <SomaFlavor/>
+      <Route exact path='/' component={SomaFlavor} />
       </Switch>
       <style jsx global>{`
         body {

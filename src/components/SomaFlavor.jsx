@@ -47,7 +47,7 @@ const marketSchedule = [
 ];
 
 
-function WeeklySchedule() {
+function SomaFlavor() {
   return(
     <div>
       {marketSchedule.map((weekDay,index) =>
@@ -62,4 +62,4 @@ function WeeklySchedule() {
   );
 }
 
-export default WeeklySchedule;
+export default SomaFlavor;

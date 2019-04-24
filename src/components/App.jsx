@@ -11,9 +11,11 @@ function App(){
       <Switch>
       <SomaFlavor/>
       <Route exact path='/' component={SomaFlavor} />
+      <Route component={Error404} />
       </Switch>
       <style jsx global>{`
         body {
+          margin-top: 100px;
           font-family: sans-serif;
           box-style: border-box;
           background-color: #FFFFFF;

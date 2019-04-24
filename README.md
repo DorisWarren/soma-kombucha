@@ -7,7 +7,7 @@
 #### Author _**Doris Warren**_
 
 ## Description
-_Soma Kombucha Taproom is considered one of the most healthiest drinks around! Would you like to order some booch? Objectives for this weeks Independent project is to create a web application using REACT library._ 
+_Soma Kombucha Taproom is considered one of the most healthiest drinks around! Would you like to order some booch? Objectives for this weeks Independent project, is to replicate a previous Angular project using REACT library._ 
 
 ## Setup/Installation Requirements
 * _Clone this repository grom Github_
@@ -19,7 +19,7 @@ _Soma Kombucha Taproom is considered one of the most healthiest drinks around! W
 
 ## Known Bugs
 
-_If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' but found 'CRLF'`. It doesn't break the code and will still run correctly when you run `npm run start`_
+_There are no known bugs at this time.If you experience any, please give contact me._
 
 ## Support and contact details
 
@@ -27,11 +27,15 @@ _If you have any questions or conerns, please contact Doris Warren at doriswarre
 
 ## Technologies Used
 
+_HTML_
+_CSS_
 _scss_
+_JavaScript_
+_JSX_
 _Webpack_
 _React_
 _eslint_
-_AOS_
+_NPM_
 
 ### License
 

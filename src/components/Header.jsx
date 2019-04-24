@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header(){
   return (
     <div>
-    <img style={{width:'70%', position:'relative', marginLeft: '155px'}} src={soma}/>
+    <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
     <ul>
         <Link to= "/"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link> 
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>WHERE TO BUY</Link> 
@@ -17,6 +17,9 @@ function Header(){
     </ul>
     <h3>KOMBUCHA</h3>
       <style jsx>{`
+        div{
+          margin-top: 100px;
+        }
         ul {
           display: flex;
           justify-content:space-around;
@@ -37,6 +40,7 @@ function Header(){
           letter-spacing:0px;
           line-height: 1.5em;
         }
+    
         `}</style>
     </div>
   );

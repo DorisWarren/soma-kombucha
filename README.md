@@ -8,6 +8,9 @@
 
 ## Description
 _Soma Kombucha Taproom is considered one of the most healthiest drinks around! Would you like to order some booch? Objectives for this weeks Independent project, is to replicate a previous Angular project using REACT library._ 
+* _I plan on making this website functional and interavtive._ 
+* _UI\UX needs a make over, will add using CSS objects_
+* _Stateful components and Menthod Binding will be troublesome. _
 
 ## Route Structure 
 ![Route Structure](./src/assets/images/Purps.png)

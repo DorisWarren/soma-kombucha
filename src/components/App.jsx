@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import SomaFlavor from './SomaFlavor';
 import { Switch, Route } from 'react-router-dom';
-// import Error404 from './Error404';
+import Error404 from './Error404';
 
 function App(){
   return (

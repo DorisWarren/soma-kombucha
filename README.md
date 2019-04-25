@@ -1,14 +1,16 @@
 # _SOMA KOMBUCHA TAPROOM_
 
-## _Epicodus Week 1 React!_
+## _Epicodus Week 1-2 React!_
 
 #### _Published April 19 ,2019_
 
-#### Author _**Doris Warren**_
+#### Author: _**Doris Warren**_
 
 ## Description
 _Soma Kombucha Taproom is considered one of the most healthiest drinks around! Would you like to order some booch? Objectives for this weeks Independent project, is to replicate a previous Angular project using REACT library._ 
 
+## Route Structure 
+![Route Structure](./src/assets/images/Purps.png)
 ## Setup/Installation Requirements
 * _Clone this repository grom Github_
 * _Run `git clone` in your terminal of choice_
@@ -31,7 +33,7 @@ _HTML_
 _CSS_
 _scss_
 _JavaScript_
-_JSX_
+_JSX_Â
 _Webpack_
 _React_
 _eslint_

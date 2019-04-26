@@ -8,7 +8,7 @@ function Home(){
         <input
           type='text'
           id='names'
-          placeholder='Pair Names'/>
+          placeholder=' Names'/>
         <input
           type='text'
           id='location'

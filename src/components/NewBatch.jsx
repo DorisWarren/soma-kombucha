@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './Header';
+import Home from './Home';
+import KombuchaQuestions from './KombuchaQuestions';
 
 class NewBatch extends React.Component {
 
@@ -8,17 +9,21 @@ class NewBatch extends React.Component {
       this.state = {
         formVisibleOnPage: false
       };
+      // this.handleClick = this.handleClick.bind(this)
     }
-      handleClick(){
-     console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
-   }
+   //    handleClick(){
+   //   this.setState({formVisibleOnPage: true});
+   // }
    
     render(){
+      let currentlyVisibleContent = null;
+      if (this.state.formVisibleOnPage){
+        currentlyVisibleContent = <NewTicketForm />;
+      } else {
+        currentlyVisibleContent = <ConfirmationQuestions />;
+      }
       return (
-        <div>
-          <p>Create custom batch!</p>
-          <strong onClick={this.handleClick}>Click me to change my state!</strong>
-        </div>
+        <KombuchaQuestionsQuestions />
       );
     }
   }

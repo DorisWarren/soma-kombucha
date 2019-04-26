@@ -25,10 +25,11 @@ _Soma Kombucha Taproom is considered one of the most healthiest drinks around! W
 * _When starting off, REACT has a more minimlist approach.Which is fine, you are able to add additional libraies based upon your needs. Angular provides a lot more features like `@angular/router` and `@angular/forms`._ 
 * _Uses `JSX`, on top of JavaScript. Along with `State Managment` and `PropTypes`.(Still TRYING to understand this)._
 * _Styling is a lot more complicated with React. This past week, I felt styling with REACT was a bit more complicated. I figured out an easier way to implement styling!_
+* _Using state is a lot trickier to use than I thought!_
 
 ## Known Bugs
 
-_There are no known bugs at this time.If you experience any, please give contact me._
+_The home button is currently not working._
 
 ## Support and contact details
 

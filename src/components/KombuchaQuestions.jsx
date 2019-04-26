@@ -5,7 +5,7 @@ function KombuchaQuestions(props){
   return (
     <div>
       <p>Have you gone through all steps to create your new Kombucha?</p>
-      <button>Yes</button>
+      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
     </div>
   );
 }

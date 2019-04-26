@@ -3,6 +3,7 @@ import Header from './Header';
 import SomaFlavor from './SomaFlavor';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
+import Home from './Home';
 
 function App(){
   return (
@@ -11,6 +12,7 @@ function App(){
       <Switch>
       <SomaFlavor/>
       <Route exact path='/' component={SomaFlavor} />
+      <Route path='/Home' component={NewTicketForm} />
       <Route component={Error404} />
       </Switch>
       <style jsx global>{`

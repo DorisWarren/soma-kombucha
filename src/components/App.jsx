@@ -12,7 +12,7 @@ function App(){
       <Switch>
       <SomaFlavor/>
       <Route exact path='/' component={SomaFlavor} />
-      <Route path='/Home' component={NewTicketForm} />
+      <Route path='/Home' component={Home} />
       <Route component={Error404} />
       </Switch>
       <style jsx global>{`

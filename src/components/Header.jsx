@@ -8,8 +8,7 @@ function Header(){
     <div>
     <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
     <ul>
-        <Link to= "/"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
-        <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
+        <Link to= "/home"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>WHERE TO BUY</Link> 
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>

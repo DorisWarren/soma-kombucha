@@ -48,5 +48,3 @@ function Header(){
 
 export default Header;
 
-
-<ul className="nav" key="list"> ... </ul>;

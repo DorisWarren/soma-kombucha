@@ -8,8 +8,8 @@ function Header(){
     <div>
     <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
     <ul>
-        <Link to= "/home"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link> <Link to="/newBooch">Create New Booch</Link>
-        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>WHERE TO BUY</Link> 
+        <Link to= "/home"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
+        <Link to="/NewBatchForm" style={{ textDecoration: 'none', color:'#b4b4b4'}}>MAKE NEW KOMBUCHA</Link> 
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>PRODUCTS</Link>

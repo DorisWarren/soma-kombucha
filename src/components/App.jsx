@@ -4,6 +4,7 @@ import SomaFlavor from './SomaFlavor';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import Home from './Home';
+import NewBatch from './NewBatch';
 
 function App(){
   return (
@@ -13,6 +14,7 @@ function App(){
       <SomaFlavor/>
       <Route exact path='/' component={SomaFlavor} />
       <Route path='/Home' component={Home} />
+      <Route path='/NewBatchForm' component={NewBatch} />
       <Route component={Error404} />
       </Switch>
       <style jsx global>{`

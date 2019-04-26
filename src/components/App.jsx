@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './Header';
 import SomaFlavor from './SomaFlavor';
-import { Switch, Route } from 'react-router-dom';
-import Error404 from './Error404';
 import Home from './Home';
 import NewBatch from './NewBatch';
+import { Switch, Route } from 'react-router-dom';
+import Error404 from './Error404';
 
 function App(){
   return (
@@ -12,6 +12,8 @@ function App(){
       <Header/>
       <Switch>
       <SomaFlavor/>
+      <Home/>
+      <NewBatch/>
       <Route exact path='/' component={SomaFlavor} />
       <Route path='/Home' component={Home} />
       <Route path='/NewBatchForm' component={NewBatch} />

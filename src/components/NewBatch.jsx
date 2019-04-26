@@ -23,7 +23,9 @@ class NewBatch extends React.Component {
         currentlyVisibleContent = <KombuchaQuestions/>;
       }
       return (
-        <KombuchaQuestions />
+        <div>
+       {currentlyVisibleContent}
+     </div>
       );
     }
   }

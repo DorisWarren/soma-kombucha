@@ -18,12 +18,12 @@ class NewBatch extends React.Component {
     render(){
       let currentlyVisibleContent = null;
       if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <NewTicketForm />;
+        currentlyVisibleContent = <Home />;
       } else {
-        currentlyVisibleContent = <ConfirmationQuestions />;
+        currentlyVisibleContent = <KombuchaQuestions/>;
       }
       return (
-        <KombuchaQuestionsQuestions />
+        <KombuchaQuestions />
       );
     }
   }

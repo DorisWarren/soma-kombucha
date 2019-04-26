@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function KombuchaQuestions(){
+function KombuchaQuestions(props){
   return (
     <div>
       <p>Have you gone through all steps to create your new Kombucha?</p>
@@ -9,4 +10,8 @@ function KombuchaQuestions(){
   );
 }
 
-export default KombuchaQuestions ;
+KombuchaQuestions.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+};
+
+export default KombuchaQuestions;

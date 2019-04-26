@@ -9,18 +9,18 @@ class NewBatch extends React.Component {
       this.state = {
         formVisibleOnPage: false
       };
-      // this.handleClick = this.handleClick.bind(this)
+      this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
     }
-   //    handleClick(){
-   //   this.setState({formVisibleOnPage: true});
-   // }
+      handleTroubleshootingConfirmation(){
+        this.setState({formVisibleOnPage: true});
+   }
    
     render(){
       let currentlyVisibleContent = null;
       if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <Home />;
+        currentlyVisibleContent = <Home/>;
       } else {
-        currentlyVisibleContent = <KombuchaQuestions/>;
+        currentlyVisibleContent = <KombuchaQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
       }
       return (
         <div>

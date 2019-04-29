@@ -11,11 +11,7 @@ function App(){
     <div>
       <Header/>
       <Switch>
-      <SomaFlavor/>
-      <Home/>
-      <NewBatch/>
       <Route exact path='/' component={SomaFlavor} />
-      <Route path='/Home' component={Home} />
       <Route path='/NewBatchForm' component={NewBatch} />
       <Route component={Error404} />
       </Switch>

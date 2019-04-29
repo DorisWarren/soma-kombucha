@@ -12,6 +12,7 @@ function App(){
       <Header/>
       <Switch>
       <Route exact path='/' component={SomaFlavor} />
+      <Route exact path='/home' component={SomaFlavor} />
       <Route path='/NewBatchForm' component={NewBatch} />
       <Route component={Error404} />
       </Switch>

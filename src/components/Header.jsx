@@ -9,7 +9,7 @@ function Header(){
     <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
     <ul>
         <Link to= "/home"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
-        <Link to="/NewBatchForm" style={{ textDecoration: 'none', color:'#b4b4b4'}}>MAKE NEW KOMBUCHA</Link> 
+        <Link to="/NewBatchForm" style={{ textDecoration: 'none', color:'#b4b4b4'}}>MAKE NEW KOMBUCHA</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>PRODUCTS</Link>
@@ -40,11 +40,10 @@ function Header(){
           letter-spacing:0px;
           line-height: 1.5em;
         }
-    
+
         `}</style>
     </div>
   );
 }
 
 export default Header;
-

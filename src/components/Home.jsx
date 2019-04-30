@@ -3,39 +3,51 @@ import Header from './Header';
 
 
 function Home(){
-  let _names = null;
-  let _location = null;
-  let _issue = null;
-  
-  function handleNewTicketFormSubmission(event) {
+  let _kombucha = null;
+  let _sweetner = null;
+  let _flavor = null;
+
+  function newKombucha(event) {
     event.preventDefault();
-    console.log(_names.value);
-    console.log(_location.value);
-    console.log(_issue.value);
-    _names.value = '';
-    _location.value = '';
-    _issue.value = '';
+    console.log(_kombucha.value);
+    console.log(_sweetner.value);
+    console.log(_flavor.value);
+    _kombucha.value = '';
+    _sweetner.value = '';
+    _flavor.value = '';
   }
-  
+
   return (
     <div>
-      <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={newKombucha}>
       <input
         type='text'
-        id='names'
-        placeholder='Pair Names'
-        ref={(input) => {_names = input;}}/>
+        id='kombucha'
+        placeholder='Kombucha Type'
+        ref={(input) => {_kombucha = input;}}/>
       <input
         type='text'
-        id='location'
-        placeholder='Location'
-        ref={(input) => {_location = input;}}/>
+        id='sweetner'
+        placeholder='Honey or Sugar'
+        ref={(input) => {_sweetner = input;}}/>
       <textarea
-        id='issue'
-        placeholder='Describe your issue.'
-        ref={(textarea) => {_issue = textarea;}}/>
-      <button type='submit'>Help!</button>
+        id='flavor'
+        placeholder='Enter flavor of choice.'
+        ref={(textarea) => {_flavor = textarea;}}/>
+      <button type='submit'>Create!</button>
       </form>
+      <style jsx>{`
+        div{
+          display: flex;
+          justify-content:space-around;
+          text-align: center;
+          letter-spacing: 4px;
+          font-family:bree;
+          font-size:14px;
+          font-weight: 400;
+          color: #cecece;
+        }
+        `}</style>
     </div>
   );
 }

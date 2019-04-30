@@ -6,11 +6,12 @@ function FlavorList(){
     <div>
       <hr/>
       {masterSomaFlavor.map((ticket, index) =>
-        <Ticket names={ticket.names}
-          location={ticket.location}
-          issue={ticket.issue}
+        <Ticket kombucha={ticket.kombucha}
+          sweetner={ticket.sweetner}
+          flavor={ticket.flavor}
           key={index}/>
       )}
+
     </div>
   );
 }

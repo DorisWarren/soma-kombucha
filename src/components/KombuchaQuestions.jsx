@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function KombuchaQuestions(props){
   return (
     <div>
-      <p>Have you gone through all steps to create your new Kombucha?</p>
-      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
+      <p>Choose from the following to customize your own kombucha!</p>
+      <button onClick={props.onTroubleshootingConfirmation}>Next</button>
       <style jsx>{`
         div{
 

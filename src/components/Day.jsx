@@ -6,27 +6,31 @@ function Day(props) {
   return(
     <div>
     <img src={require(`../assets/images/${props.image}`)} alt="somaImages"/>
-      <h3>{props.name}</h3> 
-      <h3>{props.about} </h3>
-      <h2>{props.ingredients}</h2>
+      <h3>{props.name}</h3>
+      <p>{props.about} </p>
+      <p>{props.ingredients}</p>
       <p><em>Booth {props.nutritionalFacts}</em></p>
       <style jsx>{`
         div {
           text-align: center;
         }
-        h2 {
-          text-align: center;
-          font-size: 1.5em;
-          padding: 20px;
+        h3 {
           color: #9fa845;
-        
+
+        }
+        p{
+          text-align: center;
+          font-size: 1.2em;
+          padding: 20px;
+          margin: 50px;
+          
         }
         img {
           height: 300px;
           width:auto;
-          
+
         }
-        
+
         `}</style>
     </div>
   );

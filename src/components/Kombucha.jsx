@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function Day(props) {
+function Kombucha(props) {
   return(
     <div>
     <img src={require(`../assets/images/${props.image}`)} alt="somaImages"/>
       <h3>{props.name}</h3>
       <p>{props.about} </p>
       <p>{props.ingredients}</p>
-      <p><em>Booth {props.nutritionalFacts}</em></p>
+      <p><em> {props.nutritionalFacts}</em></p>
       <style jsx>{`
         div {
           text-align: center;
@@ -23,7 +23,7 @@ function Day(props) {
           font-size: 1.2em;
           padding: 20px;
           margin: 50px;
-          
+
         }
         img {
           height: 300px;
@@ -35,7 +35,7 @@ function Day(props) {
     </div>
   );
 }
-Day.propTypes = {
+Kombucha.propTypes = {
   name: PropTypes.string,
   about: PropTypes.string,
   ingredients: PropTypes.string,
@@ -44,4 +44,4 @@ Day.propTypes = {
 
 };
 
-export default Day;
+export default Kombucha;

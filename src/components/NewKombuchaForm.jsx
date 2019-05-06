@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './Header';
+// import Header from './Header';
 
 
-function Home(){
+function NewKombuchaForm(){
   let _kombucha = null;
   let _sweetner = null;
   let _flavor = null;
 
-  function newKombucha(event) {
+  function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
     console.log(_kombucha.value);
     console.log(_sweetner.value);
@@ -19,7 +19,7 @@ function Home(){
 
   return (
     <div>
-      <form onSubmit={newKombucha}>
+      <form onSubmit={handleNewKombuchaFormSubmission}>
       <input
         type='text'
         id='kombucha'
@@ -52,4 +52,4 @@ function Home(){
   );
 }
 
-export default Home;
+export default NewKombuchaForm;

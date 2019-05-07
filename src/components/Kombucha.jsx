@@ -9,7 +9,6 @@ function Kombucha(props) {
       <h3>{props.name}</h3>
       <p>{props.about} </p>
       <p>{props.ingredients}</p>
-      <p><em> {props.nutritionalFacts}</em></p>
       <style jsx>{`
         div {
           text-align: center;
@@ -39,7 +38,6 @@ Kombucha.propTypes = {
   name: PropTypes.string,
   about: PropTypes.string,
   ingredients: PropTypes.string,
-  nutritionalFacts: PropTypes.string,
   image:PropTypes.string
 
 };

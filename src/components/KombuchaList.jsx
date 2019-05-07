@@ -1,14 +1,14 @@
 import React from 'react';
 import Kombucha from './Kombucha';
+import PropTypes from 'prop-types';
 
-function KombuchaList() {
+function KombuchaList(props) {
   return(
     <div>
-      {masterKombuchaList.map((kombucha,index) =>
+      {props.masterKombuchaList.map((kombucha,index) =>
         <Kombucha name ={kombucha.name}
           about={kombucha.about}
           ingredients={kombucha.ingredients}
-          nutritionalFacts={kombucha.nutritionalFacts}
           image={kombucha.image}
           key={index}/>
       )}
@@ -16,4 +16,7 @@ function KombuchaList() {
   );
 }
 
+KombuchaList.propTypes = {
+  kombuchaList: PropTypes.array
+};
 export default KombuchaList;

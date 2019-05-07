@@ -1,20 +1,18 @@
 import React from 'react';
-// import Header from './Header';
+import PropTypes from 'prop-types';
 
 
-function NewKombuchaForm(){
+function NewKombuchaForm(props){
   let _kombucha = null;
   let _sweetner = null;
   let _flavor = null;
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
-    console.log(_kombucha.value);
-    console.log(_sweetner.value);
-    console.log(_flavor.value);
-    _kombucha.value = '';
-    _sweetner.value = '';
-    _flavor.value = '';
+    props.onNewTicketCreation({name: _name.value, about: _about.value, ingredients: _ingredients.value});
+    _name.value = '';
+    _about.value = '';
+    _ingredients.value = '';
   }
 
   return (
@@ -22,16 +20,16 @@ function NewKombuchaForm(){
       <form onSubmit={handleNewKombuchaFormSubmission}>
       <input
         type='text'
-        id='kombucha'
+        id='name'
         placeholder='Kombucha Type'
         ref={(input) => {_kombucha = input;}}/>
       <input
         type='text'
-        id='sweetner'
+        id='about'
         placeholder='Honey or Sugar'
         ref={(input) => {_sweetner = input;}}/>
       <textarea
-        id='flavor'
+        id='ingredients'
         placeholder='Enter flavor of choice.'
         ref={(textarea) => {_flavor = textarea;}}/>
       <button type='submit'>Create!</button>
@@ -51,5 +49,10 @@ function NewKombuchaForm(){
     </div>
   );
 }
+
+NewKombuchaForm.propTypes = {
+  onNewKombuchaCreation: PropTypes.func
+};
+
 
 export default NewKombuchaForm;

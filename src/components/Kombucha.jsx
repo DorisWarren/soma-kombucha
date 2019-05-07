@@ -4,18 +4,18 @@ import PropTypes from 'prop-types';
 
 function Kombucha(props) {
 
-  // function delete() {
-  //   props.handelDeleteKombucha ({
-  //     id: props.id
-  //   });
-  // }
+  function remove() {
+    props.onHandleDeleteKombucha ({
+      id: props.id
+    });
+  }
   return(
     <div>
-    <img src={require(`../assets/images/${props.image}`)} alt="somaImages"/>
+
       <h3>{props.name}</h3>
       <p>{props.about} </p>
       <p>{props.ingredients}</p>
-      <button>Remove</button>
+      <button onClick={remove}>Remove</button>
 
       <style jsx>{`
         div {
@@ -46,9 +46,10 @@ Kombucha.propTypes = {
   name: PropTypes.string,
   about: PropTypes.string,
   ingredients: PropTypes.string,
-  image:PropTypes.string,
-  id:PropTypes.string,
-  // handleDeleteKombucha:PropTypes.string
+  id: PropTypes.number,
+  onHandleDeleteKombucha: PropTypes.func,
+  KombuchaList: PropTypes.array
+
 };
 
 export default Kombucha;

@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 function Header(){
   return (
     <div>
-    <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
-    <ul>
-        <Link to= "/"style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
+      <img style={{width:'70%', position:'relative', marginLeft: '9rem',}} src={soma}/>
+      <ul>
+        <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4'}}>HOME</Link>
         <Link to="/NewKombucha" style={{ textDecoration: 'none', color:'#b4b4b4'}}>MAKE NEW KOMBUCHA</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>SOMA TAPROOM</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ORDER</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>PRODUCTS</Link>
         <Link to="/" style={{ textDecoration: 'none', color:'#b4b4b4' }}>ABOUT</Link>
-    </ul>
-    <h3>KOMBUCHA</h3>
+      </ul>
+      <h3>KOMBUCHA</h3>
       <style jsx>{`
         div{
           margin-top: 100px;

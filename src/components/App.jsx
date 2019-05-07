@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import KombuchaList from './KombuchaList';
 import NewKombuchaControl from './NewKombuchaControl';
-import NewKombuchaFormKombucha from './NewKombuchaForm';
+// import NewKombuchaForm from './NewKombuchaForm';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import PropTypes from 'prop-types';
@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       masterKombuchaList: [
-         {
+        {
           name: 'VIGOR: (Blueberry Ginger Jun)',
           about: 'Gives you the anti-inflammatory and digestive benefits of ginger with whole wild Oregon blueberries. So good.',
           ingredients: 'Ingredients: Organic Green and Black Tea Cold-Brewed in Pure Volcanic Glacier Water, Organic Blueberries, Organic Ginger Juice, Raw Organic Oregon Wildflower Honey (ethically harvested, needed for fermentation), Organic Evap. Cane Juice (needed for fermentation), Live Probiotic Jun and Kombucha Cultures',
@@ -59,38 +59,26 @@ class App extends React.Component {
       ]
     };
     this.handleAddingNewKombuchaToList = this.handleAddingNewKombuchaToList.bind(this);
-    this.handleDeleteKombucha = this.handleDeleteKombucha.bind(this);
+    // this.handleDeleteKombucha = this.handleDeleteKombucha.bind(this);
 
-    }
+  }
 
-   handleAddingNewKombuchaToList(newKombucha){
-      var newMasterKombuchaList = this.state.masterKombuchaList.slice();
-      newMasterKombuchaList.push(newKombucha);
-      this.setState({masterKombuchaList: newMasterKombuchaList});
-    }
-    handleDeleteKombucha(info) {
-       console.log(info.id);
-       console.log(this.state.masterKombuchaList)
-       let newMasterKombuchaList = this.state.masterKombuchaList.slice();
-       for (let i= 0; i < newMasterKombuchaList.length; i ++){
-         console.log(i);
-         if (info.id === newMasterKombuchaList[i].id){
-           console.log("hi");
-           newMasterKombuchaList.splice(i,1);
-         }
-       }
-       this.setState({masterKombuchaList: masterKombuchaList});
-     }
+  handleAddingNewKombuchaToList(newKombucha){
+    let newMasterKombuchaList = this.state.masterKombuchaList.slice();
+    newMasterKombuchaList.push(newKombucha);
+    this.setState({masterKombuchaList: newMasterKombuchaList});
+  }
 
   render(){
     return (
-    <div>
-      <Header/>
-      <Switch>
-      <Route exact path='/' render={()=><KombuchaList KombuchaList={this.state.masterKombuchaList} />} />
-      <Route path='/NewKombucha' render={()=><NewKombuchaControl onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />} />
-      <Route component={Error404} />
-      </Switch>
+      <div>
+        <Header/>
+        <Switch>
+          <Route exact path='/' render={()=><KombuchaList KombuchaList={this.state.masterKombuchaList} />} />
+          <Route path='/NewKombucha' render={()=><NewKombuchaControl onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />} />
+
+          <Route component={Error404} />
+        </Switch>
         <style jsx global>{`
           body {
             margin-top: 100px;
@@ -99,10 +87,24 @@ class App extends React.Component {
             background-color: #FFFFFF;
           }
           `}</style>
-        </div>
-      );
-    }
+      </div>
+    );
   }
+}
 
 
 export default App;
+
+// handleDeleteKombucha(delete) {
+//   console.log(delete.id);
+//   console.log(this.state.masterKombuchaList)
+//   let newMasterKombuchaList = this.state.masterKombuchaList.slice();
+//   for (let i= 0; i < newMasterKombuchaList.length; i ++){
+//     console.log(i);
+//     if (delete.id === newMasterKombuchaList[i].id){
+//       console.log("hi");
+//       newMasterKombuchaList.splice(i,1);
+//     }
+//   }
+//   this.setState({masterKombuchaList: masterKombuchaList});
+// }

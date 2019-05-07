@@ -18,22 +18,22 @@ class NewKombuchaControl extends React.Component {
   }
 
   render(){
-      let currentlyVisibleContent = null;
-      if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <NewKombuchaForm onNewKombuchaCreation={this.props.onNewKombuchaCreation}/>;
-      } else {
-        currentlyVisibleContent = <KombuchaQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
-      }
-      return (
-        <div>
-          {currentlyVisibleContent}
-        </div>
-      );
+    let currentlyVisibleContent = null;
+    if (this.state.formVisibleOnPage){
+      currentlyVisibleContent = <NewKombuchaForm onNewKombuchaCreation={this.props.onNewKombuchaCreation}/>;
+    } else {
+      currentlyVisibleContent = <KombuchaQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
+    return (
+      <div>
+        {currentlyVisibleContent}
+      </div>
+    );
   }
+}
 
-  NewKombuchaControl.propTypes = {
-    onNewKombuchaCreation: PropTypes.func
-  };
+NewKombuchaControl.propTypes = {
+  onNewKombuchaCreation: PropTypes.func
+};
 
 export default NewKombuchaControl;

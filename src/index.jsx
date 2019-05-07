@@ -11,8 +11,8 @@ const render = (Component) => {
   AOS.refresh();
   ReactDOM.render(
     <AppContainer>
-    <HashRouter>
-      <Component/>
+      <HashRouter>
+        <Component/>
       </HashRouter>
     </AppContainer>,
     document.getElementById('react-app-root')

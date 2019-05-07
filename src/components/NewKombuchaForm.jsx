@@ -9,7 +9,7 @@ function NewKombuchaForm(props){
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
-    props.onNewTicketCreation({name: _name.value, about: _about.value, ingredients: _ingredients.value, id: v4()});
+    props.onNewKombuchaCreation({name: _name.value, about: _about.value, ingredients: _ingredients.value, id: v4()});
     _name.value = '';
     _about.value = '';
     _ingredients.value = '';
@@ -18,21 +18,21 @@ function NewKombuchaForm(props){
   return (
     <div>
       <form onSubmit={handleNewKombuchaFormSubmission}>
-      <input
-        type='text'
-        id='name'
-        placeholder='Kombucha Type'
-        ref={(input) => {_kombucha = input;}}/>
-      <input
-        type='text'
-        id='about'
-        placeholder='Honey or Sugar'
-        ref={(input) => {_sweetner = input;}}/>
-      <textarea
-        id='ingredients'
-        placeholder='Enter flavor of choice.'
-        ref={(textarea) => {_flavor = textarea;}}/>
-      <button type='submit'>Create!</button>
+        <input
+          type='text'
+          id='name'
+          placeholder='Kombucha Type'
+          ref={(input) => {_name = input;}}/>
+        <input
+          type='text'
+          id='about'
+          placeholder='Honey or Sugar'
+          ref={(input) => {_about = input;}}/>
+        <textarea
+          id='ingredients'
+          placeholder='Enter flavor of choice.'
+          ref={(textarea) => {_ingredients = textarea;}}/>
+        <button type='submit'>Create!</button>
       </form>
       <style jsx>{`
         div{
@@ -51,7 +51,7 @@ function NewKombuchaForm(props){
 }
 
 NewKombuchaForm.propTypes = {
-  onNewKombuchaCreation: PropTypes.func
+  onNewKombuchaCreation: PropTypes.func,
 };
 
 

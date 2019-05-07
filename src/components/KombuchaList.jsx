@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function KombuchaList(props) {
   return(
     <div>
-      {props.masterKombuchaList.map((kombucha,index) =>
+      {props.KombuchaList.map((kombucha,index) =>
         <Kombucha name ={kombucha.name}
           about={kombucha.about}
           ingredients={kombucha.ingredients}

@@ -1,7 +1,7 @@
 import React from 'react';
 import KombuchaQuestions from './KombuchaQuestions';
 import NewKombuchaForm from './NewKombuchaForm';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 class NewKombuchaControl extends React.Component {
 
@@ -35,5 +35,5 @@ class NewKombuchaControl extends React.Component {
   NewKombuchaControl.propTypes = {
     onNewKombuchaCreation: PropTypes.func
   };
-  
+
 export default NewKombuchaControl;

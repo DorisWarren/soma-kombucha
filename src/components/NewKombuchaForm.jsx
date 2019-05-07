@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
 function NewKombuchaForm(props){
-  let _kombucha = null;
-  let _sweetner = null;
-  let _flavor = null;
+  let _name = null;
+  let _about = null;
+  let _ingredients = null;
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();

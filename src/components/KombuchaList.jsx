@@ -10,7 +10,7 @@ function KombuchaList(props) {
           about={kombucha.about}
           ingredients={kombucha.ingredients}
           image={kombucha.image}
-          key={index}/>
+          key={kombucha.id}/>
       )}
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { v4 } from 'uuid';
 
 function NewKombuchaForm(props){
   let _kombucha = null;
@@ -9,7 +9,7 @@ function NewKombuchaForm(props){
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
-    props.onNewTicketCreation({name: _name.value, about: _about.value, ingredients: _ingredients.value});
+    props.onNewTicketCreation({name: _name.value, about: _about.value, ingredients: _ingredients.value, id: v4()});
     _name.value = '';
     _about.value = '';
     _ingredients.value = '';

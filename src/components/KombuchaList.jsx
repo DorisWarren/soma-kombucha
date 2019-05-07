@@ -3,9 +3,10 @@ import Kombucha from './Kombucha';
 import PropTypes from 'prop-types';
 
 function KombuchaList(props) {
+  console.log(KombuchaList)
   return(
     <div>
-      {props.KombuchaList.map((kombucha,index) =>
+      {props.KombuchaList.map((kombucha) =>
         <Kombucha name ={kombucha.name}
           about={kombucha.about}
           ingredients={kombucha.ingredients}
